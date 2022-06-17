@@ -1,13 +1,11 @@
 import { Link, Outlet } from 'react-router-dom';
-import FooterComponent from '../template-parts/FooterComponent';
-import HeaderComponent from '../template-parts/HeaderComponent';
+import FooterComponent from './FooterComponent';
+import HeaderComponent from './HeaderComponent';
 
 export default function PageLayout() {
  
 
   return (
- 
-
     <div id='wrapper'>
       <HeaderComponent />
       <Outlet />
