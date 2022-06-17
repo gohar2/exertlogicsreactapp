@@ -5,7 +5,6 @@ export default function Content({
   PageHeading
 }: GlobalPageInterface) {
   const showContent = PageParms.showContent;
-  console.log(showContent, ' showContent');
   return (
     <div>
       <h1>{PageHeading}</h1>
@@ -43,7 +42,7 @@ export default function Content({
             </div>
           </div>
         ) : (
-          <h1>You do not have rights to access this page</h1>
+          <h1>You do not have rights to access the content</h1>
         )}
       </div>
     </div>

@@ -2,7 +2,7 @@ export const siteparams =
 { 
     siteHeading:'Exert Logics', 
     slogan:"Where all your website dreams comes true!",
-    footertext: "Hello I am footer"
+    footertext: "Copyright Exert Logics"
 }
 export const links = 
 { 
@@ -10,5 +10,4 @@ export const links =
     about:"/about",
     dashboard: "/dashboard",
     blog: "/blog"
-
 }

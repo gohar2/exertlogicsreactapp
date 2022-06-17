@@ -1,33 +1,24 @@
-import React from 'react';
+import SidebarAbout from './SidebarAbout';
+import SidebarFollow from './SidebarFollow';
+import SidebarPosts from './SidebarPosts';
 
-export default function Seidebar() {
+export default function Sidebar({ SidebarControl }: SidebarControlInterface) {
   return (
     <>
       <div className='rightcolumn'>
-        <div className='card'>
-          <h2>About Me</h2>
-          <div className='fakeimg' style={{ height: '100px' }}>
-            Image
-          </div>
-          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        </div>
-        <div className='card'>
-          <h3>Popular Post</h3>
-          <div className='fakeimg'>
-            <p>Image</p>
-          </div>
-          <div className='fakeimg'>
-            <p>Image</p>
-          </div>
-          <div className='fakeimg'>
-            <p>Image</p>
-          </div>
-        </div>
-        <div className='card'>
-          <h3>Follow Me</h3>
-          <p>Some text..</p>
-        </div>
+        {SidebarControl.AboutWidget && <SidebarAbout />}
+        {SidebarControl.PostsWidget && <SidebarPosts />}
+        {SidebarControl.FollowWidget && <SidebarFollow />}
       </div>
     </>
   );
+}
+
+interface SidebarControlInterface {
+  SidebarControl: SidebarInterface;
+}
+interface SidebarInterface {
+  AboutWidget: Boolean;
+  PostsWidget: Boolean;
+  FollowWidget: Boolean;
 }
