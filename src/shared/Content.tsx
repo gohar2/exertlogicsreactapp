@@ -1,13 +1,19 @@
-import React from 'react';
+import  {useState} from 'react';
+
 
 export default function Content({
   PageParms,
   PageHeading
 }: GlobalPageInterface) {
   const showContent = PageParms.showContent;
+  const [isHome, setIsHome] = useState(1);
+
+  const checkHeadings = (isHome: number) => {
+    setIsHome(isHome + 1)
+  }
   return (
     <div>
-      <h1>{PageHeading}</h1>
+      <h1 onClick={e => checkHeadings(isHome)}>{PageHeading} {isHome}</h1>
 
       <div className='leftcolumn'>
         {showContent ? (

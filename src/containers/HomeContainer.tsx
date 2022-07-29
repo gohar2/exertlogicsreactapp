@@ -1,4 +1,3 @@
-import React from 'react';
 import Content from '../shared/Content';
 import Sidebar from '../shared/Sidebar';
 
