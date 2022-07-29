@@ -1,6 +1,6 @@
 export const siteparams = 
 { 
-    siteHeading:'Exert Logics', 
+    siteHeading:'Exert Logics React APP', 
     slogan:"Where all your website dreams comes true!",
     footertext: "Copyright Exert Logics"
 }
